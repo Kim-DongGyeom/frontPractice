@@ -1,0 +1,38 @@
+{
+  "main": [
+    {
+      "label": "ファッション",
+      "href": "/fashion"
+    },
+    {
+      "label": "ビューティー",
+      "href": "/beauty"
+    },
+    {
+      "label": "アクセサリー",
+      "href": "/accessories"
+    },
+    {
+      "label": "バッグ",
+      "href": "/bags"
+    }
+  ],
+  "event": [
+    {
+      "label": "イベント",
+      "href": "/event"
+    },
+    {
+      "label": "特集",
+      "href": "/featured"
+    },
+    {
+      "label": "ランキング",
+      "href": "/ranking"
+    },
+    {
+      "label": "新着",
+      "href": "/new"
+    }
+  ]
+}
