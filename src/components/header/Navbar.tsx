@@ -1,12 +1,12 @@
 export default function Navbar({ NavData }) {
-  console.log(NavData);
+  //   console.log(NavData);
   return (
     <div className='flex mx-2'>
       <div className='flex font-bold'>
         {NavData.main
           ? NavData.main.map((item: any, idx: number) => {
               return (
-                <div className='mx-2' key={idx}>
+                <div className='mx-2 cursor-pointer' key={idx}>
                   {item.label}
                 </div>
               );
@@ -18,7 +18,7 @@ export default function Navbar({ NavData }) {
         {NavData.event
           ? NavData.event.map((item: any, idx: number) => {
               return (
-                <div className='mx-2' key={idx}>
+                <div className='mx-2 cursor-pointer' key={idx}>
                   {item.label}
                 </div>
               );
