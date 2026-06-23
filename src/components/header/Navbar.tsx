@@ -13,7 +13,6 @@ interface NavbarProps {
 }
 
 export default function Navbar({ navData }: NavbarProps) {
-  console.log(navData);
   return (
     <div className='flex mx-2'>
       <div className='flex font-bold'>

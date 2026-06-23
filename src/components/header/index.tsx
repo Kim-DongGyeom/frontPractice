@@ -20,7 +20,7 @@ import data from '../../utils/dataMap/header/headerNavMap.json';
 import Navbar from './Navbar';
 export default function index() {
   return (
-    <div className='fixed top-0 left-0 w-full bg-white z-10'>
+    <div className='fixed top-0 left-0 w-full bg-white z-30'>
       <div className='flex justify-between items-center h-20 px-10 text-lg'>
         {/* ===== 左エリア ===== */}
         <div className='flex items-center min-h-64'>

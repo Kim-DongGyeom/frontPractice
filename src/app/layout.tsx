@@ -15,10 +15,8 @@ export default function RootLayout({
   return (
     <html lang='en' className={`h-full antialiased`}>
       <body>
-        <div className=''>
-          <Nav />
-          <div className='mt-20 h-svh'>{children}</div>
-        </div>
+        <Nav />
+        <div className='mt-20'>{children}</div>
       </body>
     </html>
   );

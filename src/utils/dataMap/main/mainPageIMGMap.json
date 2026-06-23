@@ -1,0 +1,22 @@
+{
+  "main": [
+    {
+      "label": "main2",
+      "href": "/bg/main_bg.jpg",
+      "title": "クラシックなデザインに遊び心をプラス",
+      "description": "洗練されたクラシックデザインに素材を組み合わせ"
+    },
+    {
+      "label": "main3",
+      "href": "/bg/main_bg1.jpg",
+      "title": "クラシックなデザインに遊び心をプラス",
+      "description": "洗練されたクラシックデザインに素材を組み合わせ"
+    },
+    {
+      "label": "main4",
+      "href": "/bg/main_bg2.jpg",
+      "title": "クラシックなデザインに遊び心をプラス",
+      "description": "洗練されたクラシックデザインに素材を組み合わせ"
+    }
+  ]
+}
