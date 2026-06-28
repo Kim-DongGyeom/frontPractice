@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className='w-full flex flex-col items-center'>
       <Banner props={mainPageIMGMap} />
-      <div className='w-4/5 flex bg-pink-100 justify-center items-center mt-10'>
+      <div className='w-4/5 flex justify-center items-center mt-10'>
         <RecommendedProducts />
       </div>
     </div>

@@ -1,20 +1,25 @@
 'use client';
 
-import ProductCard from './ProductCard';
+// component
+import ProductMenu from './ProductMenu';
 
 // data
 
 // icons
 export default function RecommendedProducts() {
+  const arr = [
+    { text: 'ALL' },
+    { text: 'アウター' },
+    { text: 'パンツ' },
+    { text: 'スカート' },
+    { text: 'ワンピース' },
+    { text: 'セットアップ' },
+    { text: 'ルームウェア' },
+    { text: 'スウェット' },
+  ];
   return (
-    <div className='flex justify-center items-center border'>
-      <div>
-        <div>당신을 위한</div>
-        <div>스타일 추천 아이템</div>
-      </div>
-      <div>
-        <ProductCard />
-      </div>
+    <div className='block justify-center items-center w-full'>
+      <ProductMenu />
     </div>
   );
 }
