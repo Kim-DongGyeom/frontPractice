@@ -76,7 +76,7 @@ export default function Intro({ props }: IntroProps) {
               {props?.main.map((_, idx) => (
                 <div
                   key={idx}
-                  className={`mx-1 p-1 border rounded-full cursor-pointer ${idx === imageIndex ? 'bg-gray-50' : 'bg-gray-400'}`}
+                  className={`mx-1 p-1 border rounded-full cursor-pointer ${idx === imageIndex ? 'bg-gray-50 w-8' : 'bg-gray-400 '}`}
                   onClick={() => {
                     setImageIndex(idx);
                   }}

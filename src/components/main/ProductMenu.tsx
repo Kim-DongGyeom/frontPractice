@@ -20,9 +20,9 @@ export default function ProductMenu() {
       favorite: false,
       brand: 'COCOBLANC',
       title: 'オーバーサイズデニムジャケット',
-      originalPrice: 138000,
+      originalPrice: 13800,
       discountRate: 15,
-      salePrice: 117300,
+      salePrice: 11730,
       category: 'アウター',
       lowestPrice: false,
       firstPurchase: true,
@@ -34,11 +34,11 @@ export default function ProductMenu() {
     {
       id: 2,
       favorite: true,
-      brand: 'COCOBLANC',
+      brand: 'LUNÉA',
       title: 'ジョガースウェットパンツ',
-      originalPrice: 72000,
+      originalPrice: 7200,
       discountRate: 20,
-      salePrice: 57600,
+      salePrice: 5760,
       category: 'パンツ',
       lowestPrice: true,
       firstPurchase: false,
@@ -50,11 +50,11 @@ export default function ProductMenu() {
     {
       id: 3,
       favorite: false,
-      brand: 'COCOBLANC',
+      brand: 'MÉLIA',
       title: 'フラワープリントロングスカート',
-      originalPrice: 89000,
+      originalPrice: 8900,
       discountRate: 25,
-      salePrice: 66750,
+      salePrice: 6675,
       category: 'スカート',
       lowestPrice: true,
       firstPurchase: true,
@@ -66,11 +66,11 @@ export default function ProductMenu() {
     {
       id: 4,
       favorite: false,
-      brand: 'COCOBLANC',
+      brand: 'ÉTOILE',
       title: 'リブニットホルターネックワンピース',
-      originalPrice: 150000,
+      originalPrice: 15000,
       discountRate: 20,
-      salePrice: 120000,
+      salePrice: 12000,
       category: 'ワンピース',
       lowestPrice: true,
       firstPurchase: true,
@@ -82,11 +82,11 @@ export default function ProductMenu() {
     {
       id: 5,
       favorite: true,
-      brand: 'COCOBLANC',
+      brand: 'NOIR',
       title: 'テーラードセットアップ',
-      originalPrice: 168000,
+      originalPrice: 16800,
       discountRate: 30,
-      salePrice: 117600,
+      salePrice: 11760,
       category: 'セットアップ',
       lowestPrice: false,
       firstPurchase: false,
@@ -98,11 +98,11 @@ export default function ProductMenu() {
     {
       id: 6,
       favorite: false,
-      brand: 'COCOBLANC',
+      brand: 'MELLOW',
       title: 'サテンルームウェアセット',
-      originalPrice: 68000,
+      originalPrice: 6800,
       discountRate: 15,
-      salePrice: 57800,
+      salePrice: 5780,
       category: 'ルームウェア',
       lowestPrice: false,
       firstPurchase: true,
@@ -114,11 +114,11 @@ export default function ProductMenu() {
     {
       id: 7,
       favorite: true,
-      brand: 'COCOBLANC',
+      brand: 'AURORA',
       title: 'オーバーサイズスウェットパーカー',
-      originalPrice: 82000,
+      originalPrice: 8200,
       discountRate: 10,
-      salePrice: 73800,
+      salePrice: 7380,
       category: 'スウェット',
       lowestPrice: true,
       firstPurchase: false,
@@ -136,11 +136,10 @@ export default function ProductMenu() {
   };
 
   return (
-    <div className='w-fit mx-auto'>
+    <div className='w-full mx-auto'>
       <div className='flex justify-between items-center mb-8'>
         <div className='text-2xl font-extrabold'>
-          <h1>당신을 위한</h1>
-          <h1>스타일 추천 아이템</h1>
+          <h1>今週のおすすめ</h1>
         </div>
 
         <div className='flex'>
@@ -166,18 +165,14 @@ export default function ProductMenu() {
         </div>
       </div>
       <div
-        className='grid grid-cols-5 gap-6
-                  xl:grid-cols-5
-                  lg:grid-cols-4
-                  md:grid-cols-3
-                  sm:grid-cols-2'
+        className='grid justify-center gap-6'
+        style={{
+          gridTemplateColumns: 'repeat(auto-fit, 280px)',
+        }}
       >
-        {products
-          ? products.map((item) => {
-              console.log('map: ', item);
-              return <ProductCard key={item.id} props={item} />;
-            })
-          : ''}
+        {products.map((item) => (
+          <ProductCard key={item.id} props={item} />
+        ))}
       </div>
     </div>
   );
