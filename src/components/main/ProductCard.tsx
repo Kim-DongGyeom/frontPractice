@@ -34,28 +34,6 @@ export default function ProductCard({ props }: ProductCardProps) {
     setLike(!like);
   };
 
-  /** data */
-  // id: 1,
-  // category: 'ワンピース',
-
-  // // favorite: false,
-
-  // brand: 'COCOBLANC',
-  // title: 'リブニットホルターネックワンピース',
-
-  // discountRate: 20,
-  // salePrice: 120000,
-  // originalPrice: 150000,
-
-  // lowestPrice: true,
-  // firstPurchase: true,
-  // newItem: true,
-
-  // image: '/products/1.jpg',
-
-  // rating: 4.5,
-  // reviewCount: 1200,
-
   return (
     <div>
       {/* 商品イメージ領域 */}
